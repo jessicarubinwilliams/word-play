@@ -21,6 +21,11 @@ function capitalize(string) {
   return outputString;
 }
 
+function playWithWords(string) {
+  arrayifyTruncateReverse(string);
+  removePunctuation(newString);
+  capitalize(updatedString);
+}
 
 $(document).ready(function(){
   $("#formOne").submit(function(event) {

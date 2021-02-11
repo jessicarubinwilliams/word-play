@@ -16,6 +16,12 @@ function removePunctuation(string) {
   return updatedString;
 }
 
+function capitalize(string) {
+  outputString = string.slice(0,1).toUpperCase() + string.slice(1);
+  return outputString;
+}
+
+
 $(document).ready(function(){
   $("#formOne").submit(function(event) {
     event.preventDefault();

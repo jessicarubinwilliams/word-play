@@ -10,6 +10,11 @@ function arrayifyTruncateReverse(sentence) {
   return newString;
 }
 
+function removePunctuation(string) {
+  const punctuation = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
+  updatedString = string.replaceAll(punctuation, "");
+  return updatedString;
+}
 
 $(document).ready(function(){
   $("#formOne").submit(function(event) {
